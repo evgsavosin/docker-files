@@ -1,5 +1,5 @@
 # Docker Files
-Docker image collection
+Docker image collection.
 
 ## Install
 To install, run the command in current directory for every image:
