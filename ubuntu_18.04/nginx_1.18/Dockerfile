@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 # Install nginx stable version
 RUN add-apt-repository -y ppa:nginx/stable && \
-    apt-get update && \
+    apt-get update -y && \
     apt-get install -y nginx
 
 # Change owner to nginx directories
@@ -18,7 +18,7 @@ RUN chown -R nginx:nginx /etc/nginx && \
     chown -R nginx:nginx /var/www && \
     chown -R nginx:nginx /var/log/nginx && \
     chmod -R 777 /var/www
- 
+
 # Clean
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/*

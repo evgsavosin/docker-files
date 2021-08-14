@@ -16,7 +16,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
     mysql-server
 
-RUN	rm -rf /var/lib/mysql && \
+RUN rm -rf /var/lib/mysql && \
     mkdir -p /var/run/mysqld && \
     chown -R mysql:mysql /var/run/mysqld && \
     mkdir -p /var/log/mysql && \
