@@ -19,7 +19,7 @@ RUN export LANG=en_US.UTF-8 && \
     php8.0-fpm \
     php8.0-cli
 
-RUN apt-get install -y \
+RUN apt-get install -y --no-install-recommends \
     php8.0-dev \
     php8.0-mbstring \
     php8.0-bcmath \
